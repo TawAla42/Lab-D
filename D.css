@@ -1,16 +1,76 @@
-html {
-    background-color: hsla(248, 39%, 39%, 1);
-}
 body {
-    background-color: white;
-    color: hsla(0, 0%, 0%, 1); /* Ensure semicolon is present */
-    padding: 1em;
+    background-color: hsla(246, 42%, 32%, 0.87); 
+    padding: 1.25em;
+    margin: 1.25em; 
+    border-radius: 0.625em;
 }
-h1 {
+
+main {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(0, 0%, 0%, 1);
+    border-radius: 1.25em; 
+    padding: 0.625em; 
+}
+
+main h2 {
     color: hsla(295, 94%, 27%, 1);
-    font-family: sans-serif;
 }
-99
+
+main p .focus-word {
+    color: hsla(0, 100%, 27%, 1);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+main h3 {
+    color: hsla(295, 94%, 27%, 1);
+}
+
+main p .important-word {
+    color: hsla(0, 100%, 27%, 1);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+header {
+    background-color: hsla(0, 0%, 100%,1);
+    color: hsla(300, 100%, 25%,1);
+    border-radius: 1.25em; 
+    padding: 0.625em; 
+    text-align: left;
+}
+
+nav {
+    background-color: hsla(0, 0%, 100%,1);
+    color: hsla(300, 100%, 25%,1);
+    border-radius: 1.25em; 
+    box-shadow: 0 0 0.625em hsla(0, 0%, 0%, 0.1); 
+    margin: 0in; 
+    padding: 0.625em; 
+    text-align: left;
+}
+
+aside {
+    background-color: hsla(0, 0%, 100%,1);
+    color: hsla(0, 0%, 0%,1);
+    border-radius: 1.25em; 
+    box-shadow: 0 0 0.625em hsla(0, 0%, 0%, 0.1); 
+    margin: 0in; 
+    padding: 0.625em; 
+    text-align: left;
+}
+
+footer {
+    background-color: hsla(0, 0%, 100%,1);
+    color: hsla(0, 0%, 0%,1);
+    border-radius: 1.25em; 
+    box-shadow: 0 0 0.625em hsla(0, 0%, 0%, 0.1); 
+    margin: 0in; 
+    padding: 0.625em; 
+    text-align: left;
+}
 
 
 
