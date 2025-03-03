@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Lab D</title>
-    <link href="D.css" rel="stylesheet"> <!-- Ensure the path and file name are correct -->
+    <meta charset="UTF-8">
+     <title>Lab D</title>
+    <link rel="stylesheet" href="D.css"> 
     <style>
-        html { background-color: hsla(248, 39%, 39%, 1); }
+        /*In-line CSS Overwriting 1 Embedded Style */
+        .highlighted-h4 {
+            color: blue;
+            font-size: 2.8em;
+        }
+        
+        .highlighted-p {
+            color: green;
+            font-size: 2.8em;
+        }
+        
+        /* This is styled using embedded */
+        aside h4.embedded {
+            color: hsla(120, 88%, 29%, 1); 
+        }
     </style>
 </head>
 <body>
@@ -13,7 +27,10 @@
         <h1>Lab D</h1>
     </header>
     <nav>
+    
         <ul>
+        
+           
             <li><a href="lab_a.html" style="font-size: 1.7em; font-weight: bold;">Lab A</a></li>
             <li><a href="lab_b.html" style="font-size: 1.7em; font-weight: bold;">Lab B</a></li>
             <li><a href="lab_c.html" style="font-size: 1.7em; font-weight: bold;">Lab C</a></li>
@@ -21,11 +38,24 @@
         </ul>
     </nav>
     <main>
-        <h2 style="color: hsla(295, 94%, 27%, 1);">External CSS Only</h2>
-        <p>This section is in the <span style="color: hsl(0, 98%, 32%, 1); font-weight: bold;">&lt;main&gt;</span> element.</p>
+        <h2>External CSS Only</h2>
+        <p>This section is the <span class="focus-word">&lt;main></span> element.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque dolor excepturi animi eaque, nobis aut iusto dolores error quia soluta earum odit omnis, in porro cum rem non natus. Quasi.</p>
+
+        <h3>Embedded CSS Overwriting 1 External Style</h3>
+        <p>This section is the <span class="important-word">&lt;main></span> element.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maiores, consectetur? Illum, labore voluptate quos eligendi suscipit officia voluptates quod in, unde assumenda maxime, saepe enim natus non sequi eius debitis?</p>
     </main>
+    <aside>
+        
+        <h4 style="color: hsla(0, 100%, 50%,1); font-size: h4;">In-line CSS Overwriting 1 Embedded Style</h4>
+        <p style="color: hsla(0, 0%, 0%, 1); font-size: default;">This section is in the <span style="color: hsla(0, 100%, 27%, 1); font-family: monospace; font-weight: bold; font-size: 1.3em;">aside</span> element</p>
+        <h4 class="embedded">This is styled using embedded CSS</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maiores eveniet eos et ea maxime tempore magni vel soluta quam hic delectus magnam qui accusamus unde quas in, numquam nulla.</p>
+        
+    </aside>
     <footer>
-        <p>&copy;2025 by Tawhid Alam</p>
+        <p>&copy; 2025, by Tawhid Alam</p>
     </footer>
 </body>
 </html>
